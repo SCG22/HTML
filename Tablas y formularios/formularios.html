@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-image: url("img/img5.avif");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        /* attachment es para que la imagen no se mueva y size para que la imagen se ajuste */
+    </style>
+</head> 
+<body>
+    <a href=".">Volver</a>
+
+    <h1>Formularios</h1>
+
+    <form action="index.html" accept-charset="UTF-8">
+        <h2>Encuesta</h2>
+        <div>
+            <p>Nombre completo</p>
+            <input type="text" placeholder="ejem: Juan luis guerra" required>
+        </div>
+
+        <div>
+            <p>Fecha de nacimiento</p>
+            <input type="date" required>
+        </div>
+
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="0" required max="100">
+        </div>
+        <fieldset>
+            <legend>Otras preguntas</legend>
+            <label>Estado civil</label>
+            <input type="radio" 
+            name="estado civil" 
+            id="casado" 
+            value="casado"/>
+            <label for="casado">Casado</label>
+
+            <input type="radio" 
+            name="estado civil" 
+            id="soltero" 
+            value="soltero"/>
+            <label for="soltero">Soltero</s></label>
+
+            <input type="radio" 
+            name="estado civil" 
+            id="union libre" 
+            value="Union libre"/>
+            <label for="union libre">Union Libre</label>
+
+            <div>
+                <label for="color">Color favorito</label>
+                <input type="color" name="color" id="color">
+            </div>
+<!-- disabled o readonly se usan para mostrar texto -->
+            <div>
+                <label for="email">Correo electronico</label>
+                <input 
+                placeholder="ejm@correo.com"
+                ype="email" 
+                name="email" 
+                id="email"
+                required>
+                <label for="password">Contraseña</label>
+                <input type="password"
+                required
+                name="password"
+                id="password">
+
+                <br>
+            </div>
+
+            <div>
+                <label for="ciudad">Ciudad</label>
+                <select name="ciudad" id="ciudad">
+                    <option value="med">Medellin</option>
+                    <option value="cal">Cali</option>
+                    <option value="buc">Bucaramanga</option>
+                    <option value="bog">Bogota</option>
+                    <option value="bar">Barranquilla</option>
+                    <option value="per">Pereira</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Descripción</p>
+                <textarea name="Descripción" id="Descripción
+                " cols="40" rows="10"
+                placeholder="Descripción"
+                required></textarea>
+            </div>
+
+            <div>
+                <input type="url">
+                <input type="range">
+                <input type="file" accept=".png,.jpg,.pdf">
+                <input type="time">
+                <input type="datetime-local">
+                <input type="hidden" value="20">
+                <input type="checkbox" id="terminos">
+                <label for="terminos">Aceptar Terminos y condiciones</label>
+
+            </div>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>

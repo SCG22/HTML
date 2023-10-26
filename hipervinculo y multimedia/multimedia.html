@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <a href="./index.html">Volver</a>
+    <center>
+        <h1>Imagenes</h1>
+    </center>
+    <hr/>
+    <h2>Importar Imagenes</h2>
+    <img src="img/img1.avif" alt="Imagen de perrito" height="200px"  loading="lazy"/>
+
+    <h2>Importar Imagenes Externas</h2>
+    <img src="https://www.soho.co/resizer/AUJq_qWgmpAHsfsarJRWNMePBoM=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/GQUUEA3IZFEXTK65UFTKDQ4KBY.jpg" 
+    alt="Imagen de autmovil" 
+    height="200px"
+    loading="lazy"
+    />
+    
+    <h2>Etiqueta figure con leyenda</h2>
+    <figure>
+        <img src="img/img2.avif" alt="Imagen de perrito" height="200px"  loading="lazy"/>
+        <!-- imagenes con comentario -->
+        <figcaption>Perrito Bulldog Frances</figcaption>
+    </figure>
+    <hr/>
+    <h2>Importar Gifts</h2>
+    <img 
+    src="./img/giphy.gif"
+    alt="Esto es un gift"
+    height="200px"  
+    loading="lazy"
+    />
+
+    <hr/>
+
+    <center>
+        <h2>Videos</h2>
+    </center>
+    <hr/>
+    <h2>Importar video</h2>
+    <video  src="img/video.mp4" controls poster="img/img3.avif" height="200px"></video>
+
+    <h2>Video Autoreproducido</h2>
+    <video  src="img/video.mp4" height="200px" autoplay controls></video>
+
+    <h2>Video sin sonido</h2>
+    <video  src="img/video.mp4" height="200px" muted autoplay controls></video>
+
+    <h2>Video de internet</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qiEvTdTeqQY?si=4G5MgLieVFG6shzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Importar video de youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WxG61ZD2nn0?si=5IuSDU25OxqrxOYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <!-- label:lo que se muestra en el autoreproductor -->
+    <h2>Video con subtitulos</h2>
+    <video src="img/video.mp4" controls height="200 px">
+        <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español"/>
+        <track src="subtitles.vtt" kind="subtitles" srclang="en" label="Ingles"/>
+    </video>
+
+
+    <h2>Importar un audio</h2>
+    <audio src="./img/audio.mp3" controls></audio>
+
+    <!--loop: reproducir infinitas veces  -->
+    <h2>Audio Autoreproductor</h2>
+    <audio src="img/audio.mp3" muted autoplay controls lopp></audio>
+
+</html>

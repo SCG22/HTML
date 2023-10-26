@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding:0 20px;
+            text-align: center;
+        }
+        /* border: borde interno y externo,  collapse: unifica los bordes * padding: espacio de los bordes/
+        /* para los colores se le pueden poner los codigos negro es #000 */
+        img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+        }
+        /* border-radius: establecer forma circular  width; ancho height: alto  margin: margen de informacion*/
+    </style>
+</head>
+<body>
+    <a href="./index.html">Volver</a>
+
+    <center>
+        <h1>Tablas en HTML5</h1>
+    </center>
+
+    <h2>Estructura basica de una tabla</h2>
+    <!-- tr:fila vertical, td:columna horizontal -->
+    <table border="2">
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+            <td>Item 5</td>
+        </tr>
+
+        <tr>
+            <td>product 1</td>
+            <td>product 2</td>
+            <td>product 3</td>
+            <td>product 4</td>
+            <td>product 5</td>
+        </tr>
+    </table>
+
+    <h2>Estructura de una tabla completa</h2>
+    <!-- thead:cabecera de tabla -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+                <th>Genero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Santiago</td>
+                <td>23</td>
+                <td>Medellin</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>19</td>
+                <td>Medellin</td>
+                <td>Femenino</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td colspan="3">2</td>
+                <!-- colspan: combinar o juntar columnas -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Tabla personalizada</h2>
+    <table>
+        <!-- cabecera de la tabla -->
+        <thead>
+            <!-- fila 1 cabecera -->
+            <tr>
+                <th>Especie</th>
+                <th>#</th>
+                <th>Imagen</th>
+                <th>Nombre mascota</th>
+                <th>video</th>
+            </tr>
+        </thead>
+        <!-- cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <td rowspan="3">Perros</td>
+                <!-- rowspan: expansion vertical colspan: expansion horizontal.  -->
+            </tr>
+
+            <tr>
+            <td>1</td>
+            <td>
+                <img src="img/img5.avif" alt="imagen de la mascota"  height="200px"/>
+            </td>
+            <td>Max</td>
+            <td>
+                <video src="img/video.mp4" controls height="100 px"></video>
+            </td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>
+                    <img src="img/img4.avif" alt="imagen de la mascota"  height="200px"/>
+                </td>
+                <td colspan="2">scobb</td>
+                </tr>
+
+        </tbody>
+        <!-- final o pie de pagina de la tabla -->
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+</body>
+</html>

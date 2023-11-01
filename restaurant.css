@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+    background: #001C55;
+   
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    gap: 0px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+header a:hover{
+    color: #A6E1FA;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+#header_menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#header_menu li{
+    padding: 30px;
+    font-size: 20px;
+}
+
+
+#header_menu_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#site_logo{
+    width: 200px;
+}
+
+#header_login_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+    
+}
+
+#header_login_button button{
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background-color: #1d2549;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#header_login_button{
+    display: inline;
+    padding: 30px;
+}
+
+#header_login_button button{
+    margin: 2px;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+#header_login_button button:hover{
+    margin: 2px;
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+header img{
+    filter: invert(1);
+}
+
+.selected{
+    color: #A6E1FA;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.title{
+    font-size: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(100%);
+}
+.card_restaurant {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-rest{
+    width: 300px;
+    height: 450px;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    background-color: white;
+    color: #0A2472;
+    margin: 10px;
+}
+
+.card-rest img{
+    border-top-right-radius: 30px;
+    width: 90%;
+}
+
+.card-rest h2{
+    font-size: 30px;
+    margin: 30px;
+}
+
+.card-rest p{
+    text-align: justify;
+    font-size: 20px;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;300;500;800&display=swap');
+
+
+/* estilos globaless */
+* {
+    font-family: 'Playpen Sans', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(160deg, rgba(255, 255, 255, 1) 2%, rgba(121, 9, 100) 100%);
+
+}
+
+table {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 600px;
+    /* min-width: minimimo de ancho */
+    color: #eee;
+    overflow: hidden;
+}
+
+table th,
+td {
+    padding: 20px;
+}
+
+table thead {
+    background: rgba(190, 143, 200);
+    border-bottom: 5px solid #ffffff;
+}
+
+table tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+table tr:hover td {
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+
+}

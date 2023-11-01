@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;300;500;800&display=swap');
+
+:root {
+    --primary: #76abe4;
+    --secondary: #de56f0;
+    --degradate: rgb(255, 255, 255, 0.25);
+}
+
+* {
+    font-family: 'Playpen Sans', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 30px;
+    background: var(--primary);
+}
+
+.inputbox {
+    width: 250px;
+    position: relative;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--degradate);
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    background: var(--primary);
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    color: var(--degradate);
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+
+.inputbox input:valid~span,
+.inputbox input:focus~span,
+.inputbox input:hover~span {
+    color: var(--secondary);
+    transform: translatex(10px) translatey(-25px);
+    font-size: 12px;
+    background: var(--primary);
+    padding: 0 10px;
+    border-left: 1px solid var(--secondary);
+    border-right: 1px solid var(--secondary);
+    letter-spacing: 0.3px;
+}
+
+.inputbox input:active,
+.inputbox input:focus {
+    border: 1px solid var(--secondary);
+}
+
+.inputbox:nth-child(2) input:valid~span,
+.inputbox:nth-child(2) input:focus~span {
+    background: var(--secondary);
+    color: var(--primary);
+    border-radius: 2px;
+}

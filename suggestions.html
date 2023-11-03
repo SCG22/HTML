@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suggestions</title>
-    <link rel="stylesheet" href="../../styles/suggestions css/suggestions.css">
- 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../styles/suggestions/suggestions.css">
+
 
 </head>
 
-<body> 
+<body>
 
     <header>
         <div id="header_image_container">
@@ -19,16 +21,15 @@
         </div>
         <div id="header_menu_container">
             <ul id="header_menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="./pages/catalog.html">Catalog</a></li>
-                <li><a href="./pages/recommendations.html" class="selected">Suggestions</a></li>
-                <li><a href="./pages/transport.html">Transport</a></li>
-                <li><a href="./pages/transport.html">More</a></li>
+                <li><a href="./../../index.html">Home</a></li>
+                <li><a href="./../catalog.html">Catalog</a></li>
+                <li><a href="#" class="selected">Suggestions</a></li>
+                <li><a href="./../transport.html">More</a></li>
             </ul>
         </div>
         <div id="header_login_button">
-            <button>LOG IN<i class='bx bxs-user'></i></button>
-            <button>REGISTER <i class='bx bxs-user'></i></button>
+            <a href="./../forms/login.html"><button>LOG IN<i class='bx bxs-user'></i></button></a>
+            <a href="./../forms/register.html"><button>REGISTER <i class='bx bxs-user'></i></button></a>
         </div>
     </header>
 
@@ -37,32 +38,85 @@
             <h2>SUGGESTIONS</h2>
         </div>
     </section>
-    
-    
+
+
     <section class="recommentcontent">
         <div class="card">
-            <img src="https://www.hotelescolombia.co/wp-content/uploads/2020/11/Tony-Romas-Restaurante-Dann-Carlton-Medellin-Hoteles-Colombia-0003.jpg" alt="imagen de restaurante">
-            <a href="../suggestions/restaurants.html"><h2>RESTAURANT RECOMMENDATION</h2></a>
+            <img src="https://www.hotelescolombia.co/wp-content/uploads/2020/11/Tony-Romas-Restaurante-Dann-Carlton-Medellin-Hoteles-Colombia-0003.jpg"
+                alt="imagen de restaurante">
+            <a href="../suggestions/restaurants.html">
+                <h2>RESTAURANT RECOMMENDATION</h2>
+            </a>
             <p>
                 Here you will find restaurants around Medellín with the best ratings.
             </p>
         </div>
         <div class="card">
-            <img src="https://turismoi.co/uploads/co/photo/photo_file/11752/D56B0E71-3D76-4B79-BD11-6D7716A3A04B.jpg" alt="">
-            <a href="../suggestions/activities.html"><h2>RECOMMENDATION OF ACTIVITIES</h2></a>
+            <img src="https://turismoi.co/uploads/co/photo/photo_file/11752/D56B0E71-3D76-4B79-BD11-6D7716A3A04B.jpg"
+                alt="">
+            <a href="../suggestions/activities.html">
+                <h2>RECOMMENDATION OF ACTIVITIES</h2>
+            </a>
             <p>
                 Lortetur atque dignissimos.
             </p>
         </div>
         <div class="card">
-            <img src="https://feelmedellin.com/wp-content/uploads/2018/10/foto-2-blog-razones-para-visitar-mde-1.jpg" alt="imagen del puenlo jardin">
-            <a href="../suggestions/places.html"><h2>RECOMMENDATION OF PLACES</h2></a>
-            
+            <img src="https://feelmedellin.com/wp-content/uploads/2018/10/foto-2-blog-razones-para-visitar-mde-1.jpg"
+                alt="imagen del pueblo jardin">
+            <a href="../suggestions/places.html">
+                <h2>RECOMMENDATION OF PLACES</h2>
+            </a>
+
+            <p>
+                Lorem ipsutent quaerat recusandae architecto atque dignissimos.
+            </p>
+        </div>
+        <div class="card">
+            <img src="https://telemedellin.tv/wp-content/uploads/2022/02/Metro-de-Medellin-scaled-e1644611274536.jpg"
+                alt="imagen del metro">
+            <a href="../suggestions/places.html">
+                <h2>TRANSPORT RECOMMENDATIONS</h2>
+            </a>
+
             <p>
                 Lorem ipsutent quaerat recusandae architecto atque dignissimos.
             </p>
         </div>
     </section>
+
+    <footer>
+        <div id="footer_main_content">
+            <div class="footer_logo">
+                <a href="/">
+                    <img src="../../images/logo_desk.png" id="site_logo" alt="icon">
+                </a>
+            </div>
+            <hr>
+            <div id="footer_menu_container">
+                <ul id="footer_menu">
+                    <li><a href="./pages/catalog.html">Privacy Policy</a></li>
+                    <li><a href="./pages/suggestions/suggestions.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            <div id="footer_menu_text">
+                <p>
+                    · © Copyright 2023. TouriTage Rent. All Rights Reserved
+                </p>
+            </div>
+        </div>
+        <div id="footer_logos">
+            <a href="">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="">
+                <i class='bx bxl-facebook-square'></i>
+            </a>
+            <a href="">
+                <i class='bx bxl-twitter'></i>
+            </a>
+        </div>
+    </footer>
 
 </body>
 
